@@ -1,0 +1,69 @@
+/* 
+ * main.css
+ * 11 May 2019
+ * Zul Hilmi
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.primary-text {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  background: #000000 url('../img/coffee.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.header .inner-header {
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  border-left: 3px solid #d1d1d1;
+}
+
+.header .inner-header h1 {
+  font-size: calc(100% + 3.2vw);
+}
+
+@media (min-width: 700px) {
+  .header .inner-header {
+    margin-top: calc(19 * 2.5vh);
+  }
+}
+
+@media (max-width: 700px) {
+  .header .inner-header {
+    text-align: right;
+    padding-right: 10px;
+    margin-top: calc(10 * 2.5vh);
+  }
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+}
+
+.nav .nav-link {
+  color: #ffffff;
+  transition: .3s ease-in-out;
+  font-family: 'Lobster', cursive;
+  font-size: calc(0.5 * 3.5vmax);
+}
+
+.nav .nav-link:hover {
+  color: #d0d0d0;
+}
+
+.nav .nav-link.primary {
+  font-size: calc(100% + 1.1vw);
+}
